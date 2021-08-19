@@ -13,12 +13,20 @@ const userSchema = new mongoose.Schema({
         type: Number,
         required: true
     },
-    nativeLan: {
+    language: {
         type: String,
-        enum: ['Italian', 'Hindi', 'Russian'],
+        enum: ['Italian', 'Hindi', 'Russian', 'Mandarin', 'Arabic', 'Urdu', 'German', 'Spanish', 'Tagalog', 'English', 'Polish', 'Korean', 'Persian', 'Greek', 'Japanese', 'Vietnamese'],
         required: true
 
-    }
+    },
+    hobbies: {
+        type: String,
+        required: true
+    },
+    bio: {
+        type: String,
+        required: true
+    },
 
 
 })

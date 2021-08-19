@@ -20,8 +20,9 @@ router.post('/', async (req, res) => {
         name: req.body.name,
         email: req.body.email,
         age: req.body.age,
-        nativeLan: req.body.nativeLan
-
+        language: req.body.language,
+        hobbies: req.body.hobbies,
+        bio: req.body.bio,
     })
 
     try {

@@ -1,0 +1,33 @@
+.UserDetails-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .UserDetails-title {
+    margin-top: 1rem;
+  }
+  
+  .UserDetails-form-container {
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .DetailsPage-txt-area {
+    display: block;
+    padding: 0.5rem;
+    width: 40vw;
+    height: 15vh;
+    margin: 0.3rem;
+    resize: none;
+    font-family: sans-serif;
+  }
+  
+  .btn-container {
+    width: 100vw;
+    display: flex;
+  }
+  

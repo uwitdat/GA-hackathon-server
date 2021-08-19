@@ -1,0 +1,41 @@
+.Home-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .Home-block {
+    border: 1px solid black;
+    color: white;
+    background-color: black;
+    padding: 2rem 3rem;
+    margin: 0.5rem;
+  }
+  
+  .Home-blocks-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .btn-prof {
+    margin-bottom: 0.6rem;
+    border: 1px solid black;
+    padding: 0.3rem 1rem;
+    color: white;
+    background-color: black;
+  }
+  
+  .btn-prof:hover {
+    cursor: pointer;
+  }
+  
+  .Home-span {
+    font-size: 1.2rem;
+    display: block;
+  }
+  

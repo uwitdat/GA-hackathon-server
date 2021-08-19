@@ -1,0 +1,29 @@
+.attend-txt {
+    color: green;
+  }
+  
+  .btn-attend {
+    color: green;
+  }
+  
+  .check {
+    font-style: italic;
+  }
+  
+  .event-link {
+    color: blue;
+    text-decoration: underline;
+  }
+  
+  .event-container {
+    margin-top: 1rem;
+  }
+  
+  .attend-container {
+    margin-top: 0.3rem;
+  }
+  
+  .event-date {
+    color: rgb(109, 109, 109);
+  }
+  

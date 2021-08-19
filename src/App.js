@@ -6,6 +6,7 @@ import ProfilePage from "./components/ProfilePage/ProfilePage";
 import MentorsPage from "./components/MentorsPage/MentorsPage";
 import CommunityEvents from "./components/CommunityEvents/CommunityEvents";
 import CommunityGroups from "./components/CommunityGroups/CommunityGroups";
+import Translate from "./components/Translate/Translate";
 import Login from "./components/Login/Login";
 
 import { UserContext } from "./components/UserContext/UserContext";

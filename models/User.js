@@ -17,7 +17,6 @@ const userSchema = new mongoose.Schema({
         type: String,
         enum: ['Italian', 'Hindi', 'Russian', 'Mandarin', 'Arabic', 'Urdu', 'German', 'Spanish', 'Tagalog', 'English', 'Polish', 'Korean', 'Persian', 'Greek', 'Japanese', 'Vietnamese'],
         required: true
-
     },
     hobbies: {
         type: String,
@@ -27,8 +26,6 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-
-
 })
 
 module.exports = mongoose.model('User', userSchema)

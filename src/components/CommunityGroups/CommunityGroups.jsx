@@ -9,7 +9,7 @@ import Peer from "simple-peer"
 import io from "socket.io-client"
 
 
-const socket = io.connect('http://localhost:5000')
+const socket = io.connect('http://localhost:3001')
 function App() {
 	const [ me, setMe ] = useState("")
 	const [ stream, setStream ] = useState()
@@ -30,8 +30,8 @@ function App() {
 				myVideo.current.srcObject = stream
 		})
 
-	socket.on("me", (mentorId) => {
-			setMe(mentorId)
+	socket.on("me", (id) => {
+			setMe(id)
 		})
 
 		socket.on("callUser", (data) => {
@@ -42,7 +42,7 @@ function App() {
 		})
 	}, [])
 
-	const callUser = (mentorId) => {
+	const callUser = (id) => {
 		const peer = new Peer({
 			initiator: true,
 			trickle: false,
@@ -50,7 +50,7 @@ function App() {
 		})
 		peer.on("signal", (data) => {
 			socket.emit("callUser", {
-				userToCall: mentorId,
+				userToCall: id,
 				signalData: data,
 				from: me,
 				name: name

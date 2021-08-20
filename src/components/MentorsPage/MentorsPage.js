@@ -3,6 +3,8 @@ import Mentor from "../Mentor/Mentor";
 import { Link } from "react-router-dom";
 import { IoChevronBackOutline } from "react-icons/io5";
 import axios from "axios";
+import FooterBar from "../FooterBar/FooterBar";
+import DetailsHeader from "../DetailsHeader/DetailsHeader";
 
 const MentorsPage = () => {
   const [mentors, setMentors] = useState([]);
@@ -17,7 +19,7 @@ const MentorsPage = () => {
 
   return (
     <div>
-      <h3>Click a mentor to show upcoming seminars</h3>
+      <DetailsHeader />
       {mentors.map((mentor) => (
         <Mentor key={mentor._id} mentor={mentor} />
       ))}
@@ -26,6 +28,7 @@ const MentorsPage = () => {
           <IoChevronBackOutline className="back-btn" />
         </Link>
       </div>
+      <FooterBar />
     </div>
   );
 };

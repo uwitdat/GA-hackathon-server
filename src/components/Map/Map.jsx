@@ -200,4 +200,4 @@ function Search({ panTo, setMarkers }) {
         </ComboboxPopover>
       </Combobox>
     </div>)
-} 
+}

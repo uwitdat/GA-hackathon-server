@@ -1,9 +1,10 @@
-import React, { Component } from "react";
-import Map from '../Map/Map';
-import { getCurrentLatLng } from '../../services/geolocation';
-import './CommunityEvents.css'
 
-export default class CommunityEvents extends Component{
+import React, { Component } from "react";
+import Map from '../../components/Map/Map';
+import { Link } from 'react-router-dom';
+import { getCurrentLatLng } from '../../services/geolocation';
+
+export default class EventsPage extends Component{
 
     state = {
         lat: null,
@@ -19,7 +20,7 @@ export default class CommunityEvents extends Component{
 
     render(){
     return (
-        <div className="CommunityEvents">
+        <div>
             <div>
                 <Map className="map" lat={this.state.lat} lng={this.state.lng}/>
             </div>

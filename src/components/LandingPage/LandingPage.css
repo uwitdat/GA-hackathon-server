@@ -1,0 +1,81 @@
+.Signup-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.immigrow-logo {
+  background-color: rgb(184, 184, 184);
+  border-radius: 50%;
+  height: 8rem;
+  width: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+.Signup-title {
+  font-size: 3.4rem;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+.Signup-text {
+  width: 60vw;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.Signup-text > p {
+  /* font-weight: bolder; */
+  font-size: 1.1rem;
+}
+
+.can {
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+
+.lan-select {
+  color: rgb(100, 100, 100);
+}
+
+.Signup-lan-container {
+  margin-top: 0.5rem;
+  border: 1px solid black;
+  padding: 0.7rem 0;
+  width: 45vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+.Signup-lan-container > p {
+  margin-right: 1rem;
+}
+
+.Signup-btn {
+  border: 1px solid transparent;
+  background-color: rgb(77, 214, 123);
+  border-radius: 5px;
+  width: 45vw;
+  padding: 0.7rem 0;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+.signup {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.text-container {
+  margin-top: 2rem;
+}
+
+.arr-down {
+  font-size: 1.1rem;
+}

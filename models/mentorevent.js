@@ -11,7 +11,7 @@ const eventSchema = new mongoose.Schema({
     },
     link: {
         type: String,
-        default: 'http://zoom-meeting/123dsd1231.com'
+        default: {mentorId}
     },
     mentorId: {
         type: mongoose.Schema.Types.ObjectId, ref: 'Mentor'
